@@ -21,8 +21,11 @@ class DishDetail extends Component{
             const dishCommnet=dishSelected.comments.map((dish)=>{
                 return(  
                     <div key={dish.id}>
-                        <p>{dish.comment}</p>
-                        <p>{"--"+dish.author+", "+moment(dish.date).format("MMM D, YYYY")}</p>
+                        <ul className="list-unstyled">
+                        <li>{dish.comment}</li>
+                        <li>{"--"+dish.author+", "+moment(dish.date).format("MMM D, YYYY")}</li>
+                        </ul>
+
                     </div>
                         
                                                                          
